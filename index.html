@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Global Irrigation Review – Regional Tiles</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <!-- ArcGIS JS API -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.29/"></script>
+
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="viewDiv"></div>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/ImageryTileLayer",
+      "esri/layers/FeatureLayer",
+      "esri/widgets/Editor",
+      "esri/widgets/BasemapGallery",
+      "esri/widgets/Expand",
+      "esri/widgets/LayerList"
+    ], function (
+      Map,
+      MapView,
+      ImageryTileLayer,
+      FeatureLayer,
+      Editor,
+      BasemapGallery,
+      Expand,
+      LayerList
+    ) {
+
+      // ----------------------------------------------------------
+      // ASIA REGIONS
+      // ----------------------------------------------------------
+      const westAsiaLayer = new ImageryTileLayer({
+        portalItem: { id: "397fd12bc410448aa046e09a972b8654" }, // West Asia
+        opacity: 0.8,
+        title: "West Asia"
+      });
+
+      const eastAsiaLayer = new ImageryTileLayer({
+        portalItem: { id: "d297259a0dbb4653b0b7df87afe19bcc" }, // East Asia
+        opacity: 0.8,
+        title: "East Asia"
+      });
+
+      const centralAsiaLayer = new ImageryTileLayer({
+        portalItem: { id: "8a82c7d3e0434e03a796c4311b4fb141" }, // Central Asia
+        opacity: 0.8,
+        title: "Central Asia"
+      });
+
+      // ----------------------------------------------------------
+      // NORTH AMERICA REGIONS
+      // ----------------------------------------------------------
+      const usLayer = new ImageryTileLayer({
+        portalItem: { id: "a8204e2c77b64ff6ad0286fe84024c72" }, // US
+        opacity: 0.8,
+        title: "US"
+      });
+
+      const canadaLayer = new ImageryTileLayer({
+        portalItem: { id: "c2859579b7c44272817e0f380890ebf6" }, // Canada
+        opacity: 0.8,
+        title: "Canada"
+      });
+
+      const otherNaLayer = new ImageryTileLayer({
+        portalItem: { id: "9acf1e20d8dd4eb4842d789ebe07611e" }, // Other North America
+        opacity: 0.8,
+        title: "Other North America"
+      });
+
+      // ----------------------------------------------------------
+      // AFRICA REGIONS
+      // ----------------------------------------------------------
+      const southAfricaLayer = new ImageryTileLayer({
+        portalItem: { id: "5fd8fd9a268c4ddca0690acfe0d1436b" }, // South Africa region
+        opacity: 0.8,
+        title: "South Africa region"
+      });
+
+      const eastNorthAfricaLayer = new ImageryTileLayer({
+        portalItem: { id: "964c6af61d74476aa9627bce98e4b5d3" }, // East & North Africa
+        opacity: 0.8,
+        title: "East & North Africa"
+      });
+
+      const westAfrica1Layer = new ImageryTileLayer({
+        portalItem: { id: "d1cd2f99860246fa8fc2ef10134bad74" }, // West Africa 1
+        opacity: 0.8,
+        title: "West Africa 1"
+      });
+
+      const westAfrica2Layer = new ImageryTileLayer({
+        portalItem: { id: "deaf56848b274fd096da3691b0641481" }, // West Africa 2
+        opacity: 0.8,
+        title: "West Africa 2"
+      });
+
+      // ----------------------------------------------------------
+      // OTHER CONTINENTS
+      // ----------------------------------------------------------
+      const southAmericaLayer = new ImageryTileLayer({
+        portalItem: { id: "364ae8e6439c41f986f13c59fdd90629" }, // South America
+        opacity: 0.8,
+        title: "South America"
+      });
+
+      const europeLayer = new ImageryTileLayer({
+        portalItem: { id: "3224077973684f21a037031a4dd11a1c" }, // Europe
+        opacity: 0.8,
+        title: "Europe"
+      });
+
+      const oceaniaLayer = new ImageryTileLayer({
+        portalItem: { id: "779fcb3765f44a4f8c53af10fa4a4a90" }, // Oceania
+        opacity: 0.8,
+        title: "Oceania"
+      });
+
+      // ----------------------------------------------------------
+      // Shared review points layer (AreaReview_Tags)
+      // ----------------------------------------------------------
+      const reviewLayer = new FeatureLayer({
+        portalItem: { id: "eedc0b4ec7364260a474f653127dc08f" },
+        outFields: ["*"],
+        title: "Review points"
+      });
+
+      // ----------------------------------------------------------
+      // Map & view
+      // ----------------------------------------------------------
+      const map = new Map({
+        basemap: "osm",
+        layers: [
+          // Africa
+          southAfricaLayer,
+          eastNorthAfricaLayer,
+          westAfrica1Layer,
+          westAfrica2Layer,
+
+          // Asia
+          westAsiaLayer,
+          eastAsiaLayer,
+          centralAsiaLayer,
+
+          // North America
+          usLayer,
+          canadaLayer,
+          otherNaLayer,
+
+          // Other continents
+          southAmericaLayer,
+          europeLayer,
+          oceaniaLayer,
+
+          // Review points
+          reviewLayer
+        ]
+      });
+
+      const view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [0, 10], // roughly global
+        zoom: 2
+      });
+
+      view.when().then(function () {
+
+        // ------------------------------------------------------
+        // Editor with FP / FN tagging + comments
+        // ------------------------------------------------------
+        const editor = new Editor({
+          view: view,
+          layerInfos: [{
+            layer: reviewLayer,
+            addEnabled: true,
+            updateEnabled: true,
+            deleteEnabled: false,
+            formTemplate: {
+              title: "Review irrigation classification",
+              description: "Click on the map to add or edit a review point.",
+              elements: [
+                {
+                  type: "field",
+                  fieldName: "reviewer",
+                  label: "Reviewer"
+                },
+                {
+                  type: "field",
+                  fieldName: "tag_code",
+                  label: "Tag code (FP/FN/other)",
+                  hint: "FP = False Positive, FN = False Negative, etc."
+                },
+                {
+                  type: "field",
+                  fieldName: "Reviewer_Comments",  // <-- correct field name
+                  label: "Comments",
+                  hint: "Optional explanation of your decision."
+                },
+                {
+                  type: "field",
+                  fieldName: "review_date",
+                  label: "Review date"
+                }
+              ]
+            }
+          }]
+        });
+
+        // Basemap gallery (optional)
+        const basemapGallery = new BasemapGallery({ view: view });
+        const bgExpand = new Expand({
+          view: view,
+          content: basemapGallery,
+          expanded: false
+        });
+
+        // Layer list to toggle all regional layers
+        const layerList = new LayerList({ view: view });
+
+        // UI placement
+        view.ui.add(editor, "top-right");
+        view.ui.add(bgExpand, "bottom-right");
+        view.ui.add(layerList, "top-left");
+      });
+
+    });
+  </script>
+</body>
+</html>
