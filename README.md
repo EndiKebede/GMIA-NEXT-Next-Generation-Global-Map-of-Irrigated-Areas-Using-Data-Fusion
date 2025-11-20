@@ -1,4 +1,4 @@
-content = """
+
 GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion
 =========================================================================
 
@@ -106,20 +106,12 @@ For questions or collaboration inquiries, please contact:
 Data Citation
 -------------
 
-Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis.  
-GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion.  
-Zenodo.  (Affiliation numbers removed.)
+Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion.Zenodo.
 
 -------------------------------------------------------------------------------
 
 Report Citation
 ---------------
 
-Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis.  
-GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion.  
-EarthArXiv (Preprint).  (Affiliation numbers removed.)
-"""
-filepath = "/mnt/data/GMIA_NEXT_README.txt"
-with open(filepath, "w", encoding="utf-8") as f:
-    f.write(content)
-filepath
+Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. EarthArXiv (Preprint).
+
