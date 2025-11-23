@@ -113,6 +113,5 @@ GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. Zeno
 Report Citation
 ---------------
 
-Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis.  
-GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. EarthArXiv (Preprint).
+Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. EarthArXiv (Preprint).
 """
