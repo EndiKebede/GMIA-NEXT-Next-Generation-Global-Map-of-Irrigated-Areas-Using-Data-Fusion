@@ -1,7 +1,7 @@
 GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion
 =========================================================================
 
-GMIA-NEXT is a high-resolution (30-meter) global map of irrigated areas for the 2023/24 growing season. It integrates multi-source remote sensing, machine learning, and agricultural statistics to generate an improved, next-generation representation of contemporary irrigated land.
+GMIA-NEXT is a high-resolution (30-meter) global map of irrigated areas for the 2023/24 growing season. It integrates multi-source remote sensing, machine learning, and agricultural statistics to generate an improved, next-generation representation of the current extent of irrigated cropland.
 
 This repository contains all accompanying code used to prepare, train, post-process, and validate the GMIA-NEXT dataset.
 
@@ -13,7 +13,7 @@ Repository Overview
 The repository is organized into two core components:
 
 1. `data/` Directory  
-   Contains input datasets used throughout the GMIA-NEXT workflow, including satellite imagery, hydrological layers, ancillary spatial data, and curated ground-truth samples.
+   Contains input datasets used throughout the GMIA-NEXT workflow,  feature layers, ancillary spatial data, and curated ground-truth samples.
 
 2. `code/` Directory  
    Includes Jupyter notebooks and scripts that implement the full GMIA-NEXT pipeline. The workflow is divided into five key stages:
