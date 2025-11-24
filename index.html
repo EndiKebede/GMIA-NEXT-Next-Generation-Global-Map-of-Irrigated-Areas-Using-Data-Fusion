@@ -53,7 +53,7 @@
       });
 
       const eastAsiaLayer = new ImageryTileLayer({
-        portalItem: { id: "d297259a0dbb4653b0b7df87afe19bcc" }, // East Asia
+        portalItem: { id: "2c1c5f50eefb406ca5ea900cd8475d23" }, // East Asia
         opacity: 0.8,
         title: "East Asia"
       });
@@ -89,28 +89,36 @@
       // AFRICA REGIONS
       // ----------------------------------------------------------
       const southAfricaLayer = new ImageryTileLayer({
-        portalItem: { id: "5fd8fd9a268c4ddca0690acfe0d1436b" }, // South Africa region
+        portalItem: { id: "49146c65e33a4e92a49fa2c688cafc17" }, // South Africa region
         opacity: 0.8,
         title: "South Africa region"
       });
 
-      const eastNorthAfricaLayer = new ImageryTileLayer({
-        portalItem: { id: "964c6af61d74476aa9627bce98e4b5d3" }, // East & North Africa
+      const eastNorthAfricaLayer1 = new ImageryTileLayer({
+        portalItem: { id: "d04e2b47d20a48b7a7a7d702df66ac41" }, // East  Africa
         opacity: 0.8,
-        title: "East & North Africa"
+        title: "East Africa"
+      });
+      const eastNorthAfricaLayer2 = new ImageryTileLayer({
+        portalItem: { id: "62e684d0229549f79db53e4e78d51a08" }, // North  Africa
+        opacity: 0.8,
+        title: "North Africa"
       });
 
-      const westAfrica1Layer = new ImageryTileLayer({
-        portalItem: { id: "d1cd2f99860246fa8fc2ef10134bad74" }, // West Africa 1
+      const westAfrica1Layer1 = new ImageryTileLayer({
+        portalItem: { id: "d1cd2f99860246fa8fc2ef10134bad74" }, // West Africa 
         opacity: 0.8,
-        title: "West Africa 1"
+        title: "West Africa"
       });
 
-      const westAfrica2Layer = new ImageryTileLayer({
-        portalItem: { id: "deaf56848b274fd096da3691b0641481" }, // West Africa 2
+      const westAfrica2Layer2 = new ImageryTileLayer({
+        portalItem: { id: "5ba97982befa421a9dbdb3e178b057ca" }, // Central Africa 
         opacity: 0.8,
-        title: "West Africa 2"
+        title: "Central Africa"
       });
+      
+      
+
 
       // ----------------------------------------------------------
       // OTHER CONTINENTS
@@ -132,7 +140,11 @@
         opacity: 0.8,
         title: "Oceania"
       });
-
+      const russiaLayer = new ImageryTileLayer({
+        portalItem: { id: "a779997bac1f47fbb143c3be3f686e5a" }, // Russia
+        opacity: 0.8,
+        title: "Russia"
+      });
       // ----------------------------------------------------------
       // Shared review points layer (AreaReview_Tags)
       // ----------------------------------------------------------
@@ -150,9 +162,10 @@
         layers: [
           // Africa
           southAfricaLayer,
-          eastNorthAfricaLayer,
-          westAfrica1Layer,
-          westAfrica2Layer,
+          eastNorthAfricaLayer1,
+          eastNorthAfricaLayer2,
+          westAfrica1Layer1,
+          westAfrica2Layer2,
 
           // Asia
           westAsiaLayer,
@@ -168,6 +181,7 @@
           southAmericaLayer,
           europeLayer,
           oceaniaLayer,
+          russiaLayer,
 
           // Review points
           reviewLayer
