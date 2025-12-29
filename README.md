@@ -105,13 +105,12 @@ For questions or collaboration inquiries, please contact:
 Data Citation
 -------------
 
-Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Yanhua Xie, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis.  
-GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. Zenodo.  
+Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.M.; Flach, R.; Hartman, S.; Jobbagy, E.; Khan, B.; Kurapati, V.; Lark, T.; Marquez, J.; Michael, H.; Ng, K.H.; Olaya, P.; Rosa, L.; Siebert, S.; Taufer, M.; Ng, K.W.; Urferls, A.; Davis, K.F. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. Zenodo.  
 
 -------------------------------------------------------------------------------
 
 Report Citation
 ---------------
 
-Endalkachew Kebede, Gabriel Laboy, Kevin Bhimani, Yanhua Xie, Anna Boser, Stefano Casirati, Jillian M. Deines, Rafaela Flach, Esteban Jobbagy, Bhoktear Khan, Vasavi Kurapati, Tyler Lark, Jack Marquez, Holly Michael, Kin Hong NG, Paula Olaya, Lorenzo Rosa, Stefan Siebert, Michela Taufer, Kin Wai NG, Anton Urferls, Kyle Frankel Davis. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. EarthArXiv (Preprint).
+Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.M.; Flach, R.; Hartman, S.; Jobbagy, E.; Khan, B.; Kurapati, V.; Lark, T.; Marquez, J.; Michael, H.; Ng, K.H.; Olaya, P.; Rosa, L.; Siebert, S.; Taufer, M.; Ng, K.W.; Urferls, A.; Davis, K.F. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. EarthArXiv (Preprint).
 
