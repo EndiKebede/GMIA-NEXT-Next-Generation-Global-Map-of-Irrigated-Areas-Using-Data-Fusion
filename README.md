@@ -113,5 +113,5 @@ Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.
 Report Citation
 ---------------
 
-Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.M.; Flach, R.; Hartman, S.; Jobbagy, E.; Khan, B.; Kurapati, V.; Lark, T.; Marquez, J.; Michael, H.; Ng, K.H.; Olaya, P.; Rosa, L.; Siebert, S.; Taufer, M.; Ng, K.W.; Urferls, A.; Davis, K.F. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. EarthArXiv (Preprint).
+Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.M.; Flach, R.; Hartman, S.; Jobbagy, E.; Khan, B.; Kurapati, V.; Lark, T.; Marquez, J.; Michael, H.; Ng, K.H.; Olaya, P.; Rosa, L.; Siebert, S.; Taufer, M.; Ng, K.W.; Urferls, A.; Davis, K.F. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. (In Prep).
 
