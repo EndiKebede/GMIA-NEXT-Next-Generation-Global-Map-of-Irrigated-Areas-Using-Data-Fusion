@@ -49,6 +49,11 @@ The code exports processed predictor variables on a country-level or sub-nationa
 
 3. Random Forest Model Development
 ----------------------------------
+Two Random Forest (RF) machine learning frameworks were developed to generate the GMIA-NEXT irrigation maps: a continental-scale RF model and a continental Agro-Ecological Zone (AEZ) tile-based RF model.
+
+The **Continental_AEZ_Tile_RF_Model.js** script contains the Google Earth Engine workflow for training individual AEZ tile models and generating irrigation probability and binary maps for each AEZ tile.
+
+The **Continental_Random_Forest_Model.py** script implements a high-performance computing (HPC)-based workflow for training continent-wide Random Forest models and producing country-level irrigation probability and binary prediction maps.
 
 The machine learning workflow includes:
 
@@ -58,7 +63,6 @@ The machine learning workflow includes:
 - Cross-validation and performance assessment  
 - Exporting probability and binary classification maps  
 
-Although the model was initially executed on a high-performance computing (HPC) system integrated with Google Drive via PyDrive, the workflow is compatible with any Python environment (e.g., Jupyter Notebook, Spyder).
 
 -------------------------------------------------------------------------------
 
@@ -68,7 +72,6 @@ Although the model was initially executed on a high-performance computing (HPC) 
 Post-processing steps include:
 
 - Converting probability maps to binary irrigation maps  
-- Calibrating results to (sub)national Area Equipped for Irrigation statistics  
 - Applying a 3×3 majority filter to smooth spatial noise  
 
 These steps produce the final GMIA-NEXT irrigated area layers.
