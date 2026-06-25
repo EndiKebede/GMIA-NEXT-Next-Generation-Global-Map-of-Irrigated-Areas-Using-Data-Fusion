@@ -44,7 +44,7 @@ All environmental and spectral predictors are collected and preprocessed using t
 - Aggregation and cloud-masking procedures  
 
 The code exports processed predictor variables on a country-level or sub-national basis for efficient downstream use. Scripts can easily be adapted for large-scale processing.
-
+ 
 -------------------------------------------------------------------------------
 
 3. Random Forest Model Development
@@ -106,12 +106,12 @@ For questions or collaboration inquiries, please contact:
 Data Citation
 -------------
 
-Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.M.; Flach, R.; Hartman, S.; Jobbagy, E.; Khan, B.; Kurapati, V.; Lark, T.; Marquez, J.; Michael, H.; Ng, K.H.; Olaya, P.; Rosa, L.; Siebert, S.; Taufer, M.; Ng, K.W.; Urferls, A.; Davis, K.F. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. Zenodo.  
+Kebede, E. A., Xie, Y., Laboy, G., Bhimani, K., Boser, A., Urfels, A., Khan, B. M., Adepoju, M., Adeluyi, O., Brauman, K., Casirati, S., Chandrasekaran, S., Deines, J. M., Flach, R., Hansen, M., Hartman, S., Jobbagy, E., Khan, A., Kurapati, V., … Davis, K. F. (2026). GMIA-NEXT: Next-Generation Global Map of Irrigated Areas (Version v0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17627111 
 
 -------------------------------------------------------------------------------
 
 Report Citation
 ---------------
 
-Kebede, E.; Laboy, G.; Bhimani, K.; Xie, Y.; Boser, A.; Casirati, S.; Deines, J.M.; Flach, R.; Hartman, S.; Jobbagy, E.; Khan, B.; Kurapati, V.; Lark, T.; Marquez, J.; Michael, H.; Ng, K.H.; Olaya, P.; Rosa, L.; Siebert, S.; Taufer, M.; Ng, K.W.; Urferls, A.; Davis, K.F. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas Using Data Fusion. (In Prep).
+Endalkachew Abebe Kebede, Yanhua Xie, Gabriel Laboy et al. GMIA-NEXT: Next-Generation Global Map of Irrigated Areas, 24 June 2026, PREPRINT (Version 2) available at Research Square [https://doi.org/10.21203/rs.3.rs-10085674/v2]
 
